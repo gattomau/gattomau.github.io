@@ -1,1 +1,92 @@
-<h1>gattomau.github.io</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Trial Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <style media="screen">
+        .boom {
+            background: orange;
+        }
+
+        .jumbotron {
+            background: #ffcf03;
+        }
+        .highlights {
+          font-size: 21px;
+          font-weight: lighter;
+        }
+        html,
+        body {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="container text-center">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Melvin Jones</h1>
+                        <h2>Founder of Lions Clubs International</h2>
+                        <img class="img-responsive" src="melvinjones.png" alt="">
+                        <h3>A Brief History of Lions Clubs International</h3>
+                        <p class="text-justify">In 1917, Melvin Jones, a 38-year-old Chicago business leader, told members of his local business club they should reach beyond business issues and address the betterment of their communities and the world. Jones' group, the Business
+                            Circle of Chicago, agreed. After contacting similar groups around the United States, an organizational meeting was held on June 7, 1917, in Chicago, Illinois, USA. The new group took the name of one of the invited groups, the
+                            "Association of Lions Clubs," and a national convention was held in Dallas, Texas, USA in October of that year. A constitution, by-laws, objectives and a code of ethics were approved. And the rest is history. As we approach
+                            our 100th anniversary in 2017, it's moment to look back on our long and proud tradition of service and the numerous achievements of our association and Lions around the world.</p>
+                            <h3>LCI Historical Highlights</h3>
+                            <ul class="text-justify highlights">
+                              <li><b>1917:</b> Melvin Jones and fellow Chicago businessmen found Lions Clubs to improve the community.</li>
+                              <li><b>1920:</b> Lions Clubs become international by chartering a club in Windsor, Canada.</li>
+                              <li><b>1925:</b> During the international convention in Cedar Point, Ohio, Helen Keller charges Lions with becoming "knights of the blind in the crusade against darkness."</li>
+                              <li><b>1926:</b> Polar explorer and member of the Washington D.C. Lions Club, Admiral Richard E. Byrd, Jr. flies over the North Pole and carries the Lions flag with him. He flies over the South Pole later that same year.</li>
+                              <li><b>1930:</b> Lion George Bonham paints a cane white with a wide red band to aid the visually impaired after he witnesses a blind man having trouble crossing the street.</li>
+                              <li><b>1931:</b> Lions head south and establish a club in Nuevo Laredo, Mexico. The first international convention outside of the U.S. is held in Toronto, Ontario, Canada.</li>
+                              <li><b>1933:</b> Visitors to the Chicago World's Fair learn about Lions clubs at the fair's Social Science Division.</li>
+                              <li><b>1935:</b> Amelia Earhart, honorary member of the New York City Lions Club, completes a record-breaking nonstop flight from Los Angeles to Mexico during the Lions Clubs International Convention in Mexico City.</li>
+                              <li><b>1939:</b> Members of the Detroit Uptown Lions Club turn an old Michigan farmhouse into a school to train dog guides for the visually impaired, helping to popularize dog guides worldwide.</li>
+                              <li><b>1944:</b> The world's first eye bank is created in New York City. Today, most eye banks are Lions-sponsored.</li>
+                              <li><b>1945:</b> Lions assist in drafting the United Nations Charter, starting a lasting bond with the U.N.</li>
+                              <li><b>1946:</b> The Lions Blind Camp on Casper Mountain in Wyoming hosts its first group of blind children.</li>
+                              <li><b>1947:</b> In October, Lions celebrate the 30th anniversary of the association at the Waldorf Astoria Hotel in New York City. It had become the world's largest service club organization at the time with 324,690 members in 19 nations.</li>
+                              <li><b>1948:</b> Only three years after World War II, Europe sees its first Lions club in Stockholm, Sweden. Geneva, Switzerland, follows suit just days later.</li>
+                              <li><b>1952:</b> Filipino Lions reach out to Japan and encourage the chartering of the first Japanese Lions club.</li>
+                              <li>etc. etc. etc.</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".boom").click(function() {
+                $("body").css("background-color", "black");
+                if ($(".boom").css("height") != "500px") {
+                    $(".boom").animate({
+                        height: "500px"
+                    }, 500, 'easeInOutExpo');
+                } else {
+                    $(".boom").animate({
+                        height: "20px"
+                    }, 500, 'easeInOutExpo');
+                }
+
+            });
+        });
+    </script>
+</body>
+
+</html>
